@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         let utterance = AVSpeechUtterance(string: engSpeakerTextField.text!)
 
         // Configure the utterance.
-        utterance.rate = 0.57
+        utterance.rate = 0.55
         utterance.pitchMultiplier = 0.8
         utterance.postUtteranceDelay = 0.2
         utterance.volume = 0.8
@@ -70,6 +70,8 @@ class ViewController: UIViewController {
         // Tell the synthesizer to speak the utterance.
         synthesizer.speak(utterance)
     }
+    
+    
     
 }
 
